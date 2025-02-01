@@ -2053,6 +2053,128 @@ swiper-container .swiper-notification {
   display: flex;
 }
 
+.modal-in {
+  -webkit-animation: modal-in 0.5s ease-out 1;
+          animation: modal-in 0.5s ease-out 1;
+}
+
+.modal-out {
+  -webkit-animation: modal-out 0.5s ease-in 1;
+          animation: modal-out 0.5s ease-in 1;
+}
+
+@-webkit-keyframes modal-in {
+  from {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes modal-in {
+  from {
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes modal-out {
+  from {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translateY(150%);
+            transform: translateY(150%);
+    opacity: 0;
+  }
+}
+
+@keyframes modal-out {
+  from {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translateY(150%);
+            transform: translateY(150%);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes modal-in-tablet {
+  from {
+    -webkit-transform: translate(-50%, -150%);
+            transform: translate(-50%, -150%);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes modal-in-tablet {
+  from {
+    -webkit-transform: translate(-50%, -150%);
+            transform: translate(-50%, -150%);
+    opacity: 0;
+  }
+
+  to {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes modal-out-tablet {
+  from {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate(-50%, 150%);
+            transform: translate(-50%, 150%);
+    opacity: 0;
+  }
+}
+
+@keyframes modal-out-tablet {
+  from {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate(-50%, 150%);
+            transform: translate(-50%, 150%);
+    opacity: 0;
+  }
+}
+
 @media (min-width: 474px) {
   .products__wrap {
     padding: 20px 40px;
@@ -2163,6 +2285,16 @@ swiper-container .swiper-notification {
   .popup__close {
     right: -40px;
     top: 8px;
+  }
+
+  .modal-in {
+    -webkit-animation: modal-in-tablet 0.5s ease-out 1;
+            animation: modal-in-tablet 0.5s ease-out 1;
+  }
+
+  .modal-out {
+    -webkit-animation: modal-out-tablet 0.5s ease-in 1;
+            animation: modal-out-tablet 0.5s ease-in 1;
   }
 }
 
